@@ -16,23 +16,26 @@ public class Tile : MonoBehaviour
      
 
      private Image background;
+     [SerializeField] private Image icon;
+     [SerializeField] private Image image;
      private TextMeshProUGUI text;
 
-     private void Awake() 
+     /*private void Awake() 
      {
         background = GetComponent<Image>();
         text = GetComponentInChildren<TextMeshProUGUI>();
-     }
+     }*/
 
     public void SetState(TileState state, int number)
     {
         this.state = state;
         this.number = number;
+        image.sprite = state.icon;
 
 
-        background.color = state.backgroundColor;
-        text.color = state.textColor;
-        text.text = number.ToString();
+        //background.color = state.backgroundColor;
+        //text.color = state.textColor;
+        //text.text = number.ToString();
     }
 
     public void Spawn (TileCell cell)

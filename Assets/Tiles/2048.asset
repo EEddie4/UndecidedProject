@@ -14,3 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   backgroundColor: {r: 0.92941177, g: 0.7607843, b: 0.18039216, a: 1}
   textColor: {r: 0.9764706, g: 0.9647059, b: 0.9490196, a: 1}
+  icon: {fileID: 21300000, guid: 8d727feec5d46a9bd9462ed1a0363feb, type: 3}
+  number: 2048
